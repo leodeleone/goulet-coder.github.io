@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Megan Goulet Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel=stylesheet type="text/css" href="../template.css">
+    <link rel=stylesheet type="text/css" href="documents.css">
+  </head>
+  <body>
+    <h1><a href="../index.html">Megan Goulet's Portfolio</a></h1>
+    <ul id="navigation" class="navigation-bar">
+        <li><a href="../AboutMe/about.html" target ="_self">About Me</a></li>
+        <li><a href="../Activities/activities.html" target="_self">Activities</a></li>
+        <li><a href="../Distinctions/distinctions.html">Distinctions</a></li>
+        <li><a href="../Documents/documents.html" target="_self">Documents</a></li>
+        <li><a href="../Education/education.html" target="_self">Educational Background</a></li>
+        <li><a href="../Experience/experience.html">Work Experience</a></li>
+        <li><a href="../Contacts/contact.html" target="_self">Contact Info</a></li>
+        <li class="icon"><a href="javascript:void(0);" onclick="myFunction()" target="_self"><i class="fa fa-bars"></i></a></li>
+      </ul>
+    <h2>Experience</h2>
+    <article>
+      <h3>Enlighten.Net</h3>
+      <h4>Back-End Software Developer</h4>
+      <h4>Time-Frame: June - August 2020</h4>
+      <p>
+          I had returned during the Summer of 2020 to continue my work with Enlighten.Net. Development was mainly
+          done using C# and the .NET framework. We managed our projects using DevOps and the Visual Studio Community 
+          IDE. I worked on their ENet Docs application. Here are some of the things that I worked on during the summer!
+          <ul>
+            <li>
+                First, I continued my initial implementation on the main enhancement I worked on last summer, which was
+                to add a storage provider which would programatically upload storage items to the Amazon S3 Bucket. I 
+                changed the initial provider to include storage items from Enlighten.Net
+            </li>
+            <li>
+                Then, I updated their configuration system to further customize our Amazon S3 storage provider. Using the 
+                Windows Registry, I set up the Amazon S3 Bucket Configuration within the customer's configuration, allowing 
+                them to use one of Enlighten.Net's four buckets (which were distributed among the four Availability Zones 
+                throughout the US) and, if they have one, use one of their own buckets. I also added the configuration in 
+                which the user can have a default bucket, or they can specify a bucket to store each type of file (for example
+                they can have a default bucket where everything is stored, but can specify a bucket for just their PDF files).
+            </li>
+            <li>
+                Next, I resolved a couple of bugs within their Web API. Specifically, I provided a solution for their 'Save'
+                button, which at times was enabled when it should not have been. I also added functionality to a 'Sign and
+                Move' button, in which if the user had permission to upload a file, they would automatically give permission
+                to save the file (usually, the person would have to sign their request before saving it).
+            </li>
+            <li>
+                Finally, I began my implementation for a VerifyBucket tool. This command-line tool, given the company ID, would
+                synchronize our database with the data that is stored in each Amazon bucket they have listed and report any
+                differences between our database and the data in their Amazon Bucket/s.
+            </li>
+          </ul>
+      </p>
+      <p>
+          To learn more about Enlighten.Net, please visit:
+          <a href="https://www.enlighten.net/">https://www.enlighten.net/</a>
+      </p>
+    </article>
+    <article>
+      <h3>Health Empowerment by Analytics, Learning, and Semantics (HEALS) Project</h3>
+      <h4>Front-End Software Developer</h4>
+      <h4>Time Frame: Feburary - August 2020</h4>
+      <p>
+        During my second semester, I applied for and was accepted to the HEALS Project as an undergraduate research assistant. While
+        I was employed, I primarily worked on the application's graphical user interface using pure HTML/CSS and Javascript/JSON, while 
+        collaborating on work using the Node-Red environment. Here are some of the things I worked on during my time.
+        <ul>
+          <li>
+            I was mainly responsible for creating the front-end of the application. I would receive a template design for the website, and
+            I would implement the design in HTML/CSS. In total, there were 2 redesigns involved in creating the HEALS front-end application. 
+          </li>
+          <li>
+            Another change that I made was to use data sent from the server (JSON format) and 
+          </li>
+        </ul>
+      </p>
+    </article>
+    </body>
+</html>
