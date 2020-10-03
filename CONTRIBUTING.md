@@ -72,6 +72,20 @@ If you are interested in working on this project further, I will review your pul
 
 Again, if you are encountering any issues, feel free to reach out to me at redfireforever103@gmail.com! 
 
+## Code of Conduct
+
+The code of conduct is relatively simple. 
+
+First and foremost, please be kind and helpful to one another! Anyone from any coding background is welcome to work on this project! If you are an experienced developer, please leave good first issues to people who are new to programming.
+
+If you see someone that has assigned themselves to an issue, please know that they are most likely working on this issue!
+
+When you are creating your branch, you must create your branch based off of the master branch, as creating it off of any other branch can cause errors, especially if you are working on a different issue.
+
+Also, as a reminder, please follow [Hacktober's Code of Conduct](https://hacktoberfest.digitalocean.com/details) as well!
+
+If you feel that anything should be added to this, you can also reach out to me at redfireforever103@gmail.com!
+
 ## Notes for Developer
 
 When adding a new webpage to my navigation bar, change the max-width property in the template.css file so the navigation bar does not overlap into two rows.
