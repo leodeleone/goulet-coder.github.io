@@ -13,7 +13,9 @@ tutorials if you would like to learn a different programming language! You are a
 help you with your Web Development Journey!
 
 [W3Schools HTML Tutorial](https://www.w3schools.com/html/)
+
 [W3Schools CSS Tutorial](https://www.w3schools.com/css/)
+
 [W3Schools JS Tutorial](https://www.w3schools.com/js/)
 
 To make contributions to my project as seamlessly as possible, I recommend downloading the following products (I will walk through
