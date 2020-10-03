@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Megan Goulet Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel=stylesheet type="text/css" href="../template.css">
+    <link rel=stylesheet type="text/css" href="documents.css">
+  </head>
+  <body>
+    <h1><a href="../index.html">Megan Goulet's Portfolio</a></h1>
+    <ul id="navigation" class="navigation-bar">
+        <li><a href="../AboutMe/about.html" target ="_self">About Me</a></li>
+        <li><a href="../Activities/activities.html" target="_self">Activities</a></li>
+        <li><a href="../Distinctions/distinctions.html">Distinctions</a></li>
+        <li><a href="../Documents/documents.html" target="_self">Documents</a></li>
+        <li><a href="../Education/education.html" target="_self">Educational Background</a></li>
+        <li><a href="../Experience/experience.html">Work Experience</a></li>
+        <li><a href="../Contacts/contact.html" target="_self">Contact Info</a></li>
+        <li class="icon"><a href="javascript:void(0);" onclick="myFunction()" target="_self"><i class="fa fa-bars"></i></a></li>
+      </ul>
+    <h2>Experience</h2>
+    <article>
+      <h3>Enlighten.Net</h3>
+      <h4>Back-End Software Developer</h4>
+      <h4>Time-Frame: June - August 2020</h4>
+      <p>
+          I had returned during the Summer of 2020 to continue my work with Enlighten.Net. Development was mainly
+          done using C# and the .NET framework. We managed our projects using DevOps and the Visual Studio Community 
+          IDE. I worked on their ENet Docs application. Here are some of the things that I worked on during the summer!
+          <ul>
+            <li>
+                First, I continued my initial implementation on the main enhancement I worked on last summer, which was
+                to add a storage provider which would programatically upload storage items to the Amazon S3 Bucket. I 
+                changed the initial provider to include storage items from Enlighten.Net
+            </li>
+            <li>
+                Then, I updated their configuration system to further customize our Amazon S3 storage provider. Using the 
+                Windows Registry, I set up the Amazon S3 Bucket Configuration within the customer's configuration, allowing 
+                them to use one of Enlighten.Net's four buckets (which were distributed among the four Availability Zones 
+                throughout the US) and, if they have one, use one of their own buckets. I also added the configuration in 
+                which the user can have a default bucket, or they can specify a bucket to store each type of file (for example
+                they can have a default bucket where everything is stored, but can specify a bucket for just their PDF files).
+            </li>
+            <li>
+                Next, I resolved a couple of bugs within their Web API. Specifically, I provided a solution for their 'Save'
+                button, which at times was enabled when it should not have been. I also added functionality to a 'Sign and
+                Move' button, in which if the user had permission to upload a file, they would automatically give permission
+                to save the file (usually, the person would have to sign their request before saving it).
+            </li>
+            <li>
+                Finally, I began my implementation for a VerifyBucket tool. This command-line tool, given the company ID, would
+                synchronize our database with the data that is stored in each Amazon bucket they have listed and report any
+                differences between our database and the data in their Amazon Bucket/s.
+            </li>
+          </ul>
+      </p>
+      <p>
+          To learn more about Enlighten.Net, please visit:
+          <a href="https://www.enlighten.net/">https://www.enlighten.net/</a>
+      </p>
+    </article>
+    <article>
+      <h3>Health Empowerment by Analytics, Learning, and Semantics (HEALS) Project</h3>
+      <h4>Front-End Software Developer</h4>
+      <h4>Time Frame: Feburary - August 2020</h4>
+      <p>
+        During my second semester, I applied for and was accepted to the HEALS Project as an undergraduate research assistant. While
+        I was employed, I primarily worked on the application's graphical user interface using pure HTML/CSS and Javascript/JSON, while 
+        collaborating on work using the Node-Red environment. Here are some of the things I worked on during my time.
+        <ul>
+          <li>
+            I was mainly responsible for creating the front-end of the application. I would receive a template design for the website, and
+            I would implement the design in HTML/CSS. In total, there were 2 redesigns involved in creating the HEALS front-end application. 
+            Additionally, I was the main consultant for any changes or updates to the GUI, and was responsible for the organizational portion
+            of their data representation.
+          </li>
+          <li>
+            Another change that I made was to use data sent from the server (JSON format) to dynamically edit and update the information. One
+            of the problems I discovered was that when the user was manipulating the data, while the changes were being stored in the current 
+            instance of the JSON data, those changes were not being stored within the server. With the help of a colleague, we used the Node-Red
+            technologies to update these changes to the server. 
+          </li>
+        </ul>
+      </p>
+      <p>
+        To learn more about the HEALS Project, please visit:
+        <a href="https://idea.rpi.edu/research/projects/heals">https://idea.rpi.edu/research/projects/heals</a>
+      </p>
+    </article>
+    <article>
+      <h3>Enlighten.Net</h3>
+      <h4>Back-End Software Developer</h4>
+      <h4>Time-Frame: June - August 2019</h4>
+      <p>
+          During the summer of 2019, I interned at Enlighten.Net as a back-end software developer. Development was mainly
+          done using C# and the .NET framework. We managed our projects using DevOps and the Visual Studio Community 
+          IDE. I worked on their ENet Docs application. Here are some of the things that I worked on during the summer!
+          <ul>
+            <li>
+              One of the main issues that Enlighten.Net was facing was the efficient storage of their documents. ENet Docs stores
+              millions of files, and while Enlighten.Net was able to store these documents on their on-site servers, they frequently
+              had to add hard drives, and managing their servers were becoming increasingly difficult. Therefore, they have decided to 
+              move to storing incoming documents on the cloud. After some research, they decided that Amazon S3 would best suit their needs.
+              
+              I was primarily responsible for researching Amazon S3, analyzing whether it truly fit the needs of Enlighten.Net, and looking for 
+              any pitfalls that could potentially harm the ENet Docs product. I then implemented a simple storage provider that allows the application
+              to upload, stream, or delete documents stored on Amazon S3. 
+            </li>
+            <li>
+              Additionally, I began to organize ENet Doc's configuration settings into a JSON file, and learned the basics of Web APIs.
+            </li>
+          </ul>
+      </p>
+      <p>
+          To learn more about Enlighten.Net, please visit:
+          <a href="https://www.enlighten.net/">https://www.enlighten.net/</a>
+      </p>
+    </article>
+    <article>
+      <h3>Mobile Apps for Hartford</h3>
+      <h4>Mobile Software Developer</h4>
+      <h4>Time-Frame: July - August 2018</h4>
+      <p>
+          Throughout the summer of 2018, I participated in the Mobile Apps for Hartford program, an employment opportunity for top-performing high school
+          students that have completed the mobile AP Computer Science Principles course (for more information about the course, please visit
+          <a href="https://course.mobilecsp.org/mobilecsp/course?use_last_location=true">https://course.mobilecsp.org/mobilecsp/course?use_last_location=true</a>
+          ) students spend a month working alongside Computer Science students at Trinity College on a mobile application that will benefit a non-profit 
+          organization in Hartford, CT. Development is done using MIT App Inventor 2, a block-based programming language.
+      </p>
+      <ul>
+        <li>
+          I primarily worked on the development of Nisimo, a mobile application that is designed to relieve the stress of therapists. I developed 
+          the Guided Imagery exercises, which allows therapists to upload and remove (if they so choose) their own pictures, browse through different
+          musical playlists, and view an image in full-screen.
+        </li>
+        <li>
+          Throughout the internship, I was also in charge of creating the logo, managing the documentation for Nisimo, and keeping contact with
+          our client.
+        </li>
+      </ul>
+      <p>
+          To learn more about the Mobile Apps for Hartford program, please visit:
+          <a href="https://sites.google.com/site/mobileappsforhartford/">https://sites.google.com/site/mobileappsforhartford/</a>
+      </p>
+    </article>
+    </body>
+</html>
