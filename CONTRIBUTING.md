@@ -60,7 +60,9 @@ Now you are free to begin your work on the issue! I highly recommend reading the
 
 If you would like to save your changes on your local machine (and have those changes appear on your branch), you can send a commit, which is the Ctrl + Save feature of Git. GitHub Desktop will automatically show what changes you have made to the code, and you automatically have the option to commit your code. When making a commit, leave a short note on the current progress you have made on the issue, as well as anything you would like to remind yourself once you come back to working on the issue. 
 
-Once you are done working on your issue, you are ready to make your Pull Request! For those who are new to Git, a pull request will allow you to send a copy of your code (which should fix the issue you are currently working on) to me, in which I could choose to use as the new foundational code for my website (hosted on the master branch). First, just to ensure that you do not lose your progress, make one final commit on GitHub Desktop. Then, you should be able to see the **Create Pull Request** button. Click on this button to create your pull request. It should redirect you to the GitHub website.
+First, make sure you push your commits to origin. When you make a commit on GitHub Desktop, you are only saving the code on your local computer. To see your changes reflected on your GitHub branch, you must push to origin, which puts your code on your branch on GitHub. 
+
+Once you are done working on your issue and completing the steps above, you are ready to make your Pull Request! For those who are new to Git, a pull request will allow you to send a copy of your code (which should fix the issue you are currently working on) to me, in which I could choose to use as the new foundational code for my website (hosted on the master branch). First, just to ensure that you do not lose your progress, make one final commit on GitHub Desktop. Then, you should be able to see the **Create Pull Request** button. Click on this button to create your pull request. It should redirect you to the GitHub website.
 
 This will give you one final option to review the changes you have made in the code. If everything looks good, leave a short comment explaining what you have done, and create your pull request! That is all you will need to do to get a point for your pull request quota (assuming you make meaningful changes to the code).
 
@@ -70,4 +72,4 @@ Again, if you are encountering any issues, feel free to reach out to me at redfi
 
 ## Notes for Developer
 
-When adding a new webpage to my navigation bar, change the max-width property in the template.css file so the navigation bar does not overlap. 
+When adding a new webpage to my navigation bar, change the max-width property in the template.css file so the navigation bar does not overlap into two rows.
