@@ -11,12 +11,13 @@ body{
     text-align:center;
     background-color:#fff2ff;
     font-family: Helvetica;
+    margin: 0;
 }
 
 article{
     text-align:left;
-    width:95%;
-    margin-left:3%;
+    width: 92%;
+    margin: 0 auto;
 }
 table{
     background-color:#ffe3ff;
@@ -27,13 +28,11 @@ table{
     margin:0;
     padding:0;
     background-color: #DDDDDD;
+    position: sticky;
+    top: 0;
 }
 .navigation-bar li{
     font-size: 120%;
-    padding-left:1%;
-    padding-right:1%;
-    padding-top:0.5%;
-    padding-bottom:0.5%;
     display:inline-block;
 }
 .navigation-bar li:hover{
@@ -47,6 +46,8 @@ table{
     color: #000000;
     display:inline-block;
     width:100%;
+    padding: 0.8em;
+    box-sizing: border-box;
 }
 .navigation-bar .icon{
     display:none;
@@ -61,17 +62,21 @@ table{
 @media screen and (max-width: 1006px){
     .navigation-bar li:not(:first-child) {display: none;}
     .navigation-bar li.icon{
-        float:right;
         display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
     .navigation-bar li:first-child {width:90%;}
+    .navigation-bar a{
+        padding: 0.5em;
+    }
     .navigation-bar a:first-child {display:block; width:auto;}
 }
 /*
     Controls dropdown view when 'hamburger' button is clicked.
 */
 @media screen and (max-width: 1006px) {
-    .navigation-bar.responsive {position: relative;}
     .navigation-bar.responsive li.icon {
       position: absolute;
       right: 0;
